@@ -357,3 +357,12 @@ html, body {
 * {
   box-sizing: border-box;
 }
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  padding: 0 1em;
+}

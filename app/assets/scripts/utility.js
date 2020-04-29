@@ -14,7 +14,7 @@ export const requestData = async function(mode) {
     console.log(`[requestData]: response status for ${endpoint}: ${response.status}`);
     return await response.json();
   } catch(err) {
-    console.log(`[requestData]: error: ${err}`);
+    return {error: err}; //since we were expecting an object...
   }
 
 }

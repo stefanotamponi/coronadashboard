@@ -3,3 +3,5 @@
 @import "base/_global";
 @import "base/_containers.css";
 @import "modules/_card.css";
+@import "modules/_slideshow.css";
+@import "modules/_navigation.css";

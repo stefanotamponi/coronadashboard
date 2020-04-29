@@ -1,5 +1,6 @@
 import Router from './Components/Router';
 import UI from './Components/UI';
+import Slideshow from './Components/Slideshow';
 
 class App {
   constructor() {
@@ -10,8 +11,10 @@ class App {
   }
 
   initialize() {
-    this.mainContent.setAttribute("class", "main-content container");
+    this.mainContent.setAttribute("class", "main-content");
     this.mainContent.setAttribute("id", "main-content");
+    let slides = new Slideshow();
+    this.mainContent.appendChild(slides.core)
     this.app.appendChild(this.mainContent);
   }
 }

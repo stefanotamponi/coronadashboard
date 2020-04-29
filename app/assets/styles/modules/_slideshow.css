@@ -1,0 +1,26 @@
+.slideshow {
+  background: rgba(0, 0, 0, .5);
+  height: 30vh;
+  overflow: hidden;
+  transition: all 300ms ease-out;
+
+  &__inner {
+    background: green;
+    display: flex;
+    flex-shrink: 0;
+    height: 100%;
+    width: 200%;
+    transition: all 300ms ease-out;
+  }
+
+  &__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background: red;
+    &:first-child {
+      background: orange;
+    }
+  }
+}

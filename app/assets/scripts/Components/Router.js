@@ -10,7 +10,7 @@ class Router {
     const url = "#" + `${urlParts.join('/')}`;
     history.pushState({}, '', url);
 
-    this.app.ui.setView(matchedRoute.template);
+    this.app.ui.setView(matchedRoute.template)
   }
 
   matchUrlToRoute(urlParts) {

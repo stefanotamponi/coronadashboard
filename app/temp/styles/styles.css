@@ -354,15 +354,24 @@ html, body {
   padding: 0;
 }
 
+body {
+  background-color: #666;
+}
+
 * {
   box-sizing: border-box;
 }
 
 .container {
-  max-width: 80%;
+  max-width: calc(100% - 2em);
   margin: 0 auto;
 }
 
 .wrapper {
   padding: 0 1em;
+}
+
+.card {
+  background: #FFF;
+  padding: 1em 0;
 }

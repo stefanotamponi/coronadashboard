@@ -1,24 +1,20 @@
 import { requestData } from "../utility";
+import Card from './Card';
 
 class UI {
   constructor() {
-    this.app = document.getElementById("root");
-    this.mainContent = document.createElement("div");
     this.mode = "global";
-    this.setup();
-  }
-
-  setup() {
-    this.app.appendChild(this.mainContent);
+    this.card = new Card();
   }
 
   setContent(data) {
-    this.mainContent.innerHTML = JSON.stringify(data);
+    this.card.setContent(data);
   }
 
   setView(value) {
-    requestData(value).then(data => this.setContent(data));
     this.mode = value;
+    requestData(value)
+      .then(data => this.setContent(data));
   }
 }
 

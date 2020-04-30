@@ -4,6 +4,7 @@
   overflow: hidden;
   position: relative;
   transition: all 300ms ease-out;
+  z-index: -1;
 
   &__title {
     color: #FFF;

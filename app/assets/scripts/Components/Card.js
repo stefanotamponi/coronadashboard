@@ -12,14 +12,17 @@ class Card {
   }
 
   setContent(data) {
+    let mode = document.getElementById("slideshow-title").innerHTML;
+    console.log(mode);
     this.content.innerHTML = `
-      <h1>COVID Stats</h1>
-      <small>from NovelCovid19</small>
-      <ul>
-        ${Object.keys(data).map(key => {
-          return `<li>${key}: ${data[key]}</li>`;
-        }).join("")}
-      </ul>
+      <h1>${mode == "global" ? "Totale" : "Italia"}</h1>
+      <small>data from NovelCovid19</small>
+      ${Object.keys(data).map(key => {
+        return `<div class="card__section">
+          <h4>${key}</h4>
+          <p>${data[key]}</p>
+        </div>`
+      }).join("")}
     `;
   }
 }

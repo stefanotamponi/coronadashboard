@@ -43,7 +43,8 @@ class UI {
   }
 
   setView(value) {
-    let slideshow = document.getElementById("slideshow");
+    let slideshow = document.getElementById("slideshow"),
+    title = document.getElementById("slideshow-title");
     this.mode = value;
 
     if (value == "global") {
@@ -51,6 +52,8 @@ class UI {
     } else if (value == "local") {
       slideshow.style.transform = "translateX(-50%)";
     }
+    title.innerHTML = this.mode;
+
     requestData(value)
       .then(data => this.setContent(data));
   }

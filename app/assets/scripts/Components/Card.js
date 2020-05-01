@@ -56,8 +56,8 @@ class Card {
 
     this.content.innerHTML = `
       <h1>Totale</h1>
-      <small>data from NovelCovid19</small>
       ${content}
+      <p>Dati forniti da <a href="https://github.com/novelCOVID/API">NovelCovid</a></p>
     `;
   }
 }

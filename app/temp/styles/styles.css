@@ -380,16 +380,12 @@ body {
   transition: all 300ms ease-out;
   text-align: center;
   z-index: 2;
+
+  
 }
 
 .card h1 {
-    margin-bottom: 0;
-  }
-
-.card small {
-    display: block;
-    margin-top: .5em;
-    margin-bottom: 2.5em;
+    margin-bottom: 1em;
   }
 
 .card__section {
@@ -401,7 +397,7 @@ body {
 .card__section div {
       display: flex;
       flex-direction: column;
-      margin-bottom: 1.5em;
+      margin-bottom: 2em;
       margin-top: 0;
 
     }
@@ -413,6 +409,12 @@ body {
 .card__section div h3 {
         margin-top: .5em;
         margin-bottom: .5em;   
+        text-transform: uppercase;
+      }
+
+.card__section div p {
+        text-transform: uppercase;
+        font-size: .9em;
       }
 
 .slideshow {

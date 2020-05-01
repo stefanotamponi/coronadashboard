@@ -8,13 +8,7 @@
   z-index: 2;
 
   h1 {
-    margin-bottom: 0;
-  }
-  
-  small {
-    display: block;
-    margin-top: .5em;
-    margin-bottom: 2.5em;
+    margin-bottom: 1em;
   }
 
   &__section {
@@ -25,7 +19,7 @@
     div {
       display: flex;
       flex-direction: column;
-      margin-bottom: 1.5em;
+      margin-bottom: 2em;
       margin-top: 0;
 
       h3, p {
@@ -35,8 +29,16 @@
       h3 {
         margin-top: .5em;
         margin-bottom: .5em;   
+        text-transform: uppercase;
+      }
+
+      p {
+        text-transform: uppercase;
+        font-size: .9em;
       }
 
     }
   }
+
+  
 }

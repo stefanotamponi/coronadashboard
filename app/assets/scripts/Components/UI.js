@@ -60,7 +60,7 @@ class UI {
       arrowRight.classList.remove("arrow--active");   
 
     }
-    title.innerHTML = this.mode;
+    title.innerHTML = this.mode == "global" ? "Mondo" : "Italia";
 
     requestData(value)
       .then(data => this.setContent(data));

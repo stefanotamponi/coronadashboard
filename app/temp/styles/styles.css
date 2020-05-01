@@ -389,21 +389,31 @@ body {
 .card small {
     display: block;
     margin-top: .5em;
-    margin-bottom: 3em;
+    margin-bottom: 2.5em;
   }
 
 .card__section {
-    margin-bottom: 2em;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
   }
 
-.card__section h4 {
-      text-transform: uppercase;
-      margin-bottom: 0;
+.card__section div {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.5em;
+      margin-top: 0;
+
     }
 
-.card__section p {
-      margin-top: .5em;
-    }
+.card__section div h3, .card__section div p {
+        margin: 0;
+      }
+
+.card__section div h3 {
+        margin-top: .5em;
+        margin-bottom: .5em;   
+      }
 
 .slideshow {
   background: rgba(0, 0, 0, .5);

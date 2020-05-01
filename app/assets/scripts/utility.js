@@ -18,3 +18,13 @@ export const requestData = async function(mode) {
   }
 
 }
+
+
+export const kFormat = n => {
+  if (Math.abs(n) > 999) {
+    return Math.sign(n)*((Math.abs(n)/1000).toFixed(1)) + 'k'
+  } else {
+    return Math.sign(n)*Math.abs(n)
+  }
+
+}

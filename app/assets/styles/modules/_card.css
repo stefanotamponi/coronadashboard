@@ -14,18 +14,29 @@
   small {
     display: block;
     margin-top: .5em;
-    margin-bottom: 3em;
+    margin-bottom: 2.5em;
   }
 
   &__section {
-    margin-bottom: 2em;
-    h4 {
-      text-transform: uppercase;
-      margin-bottom: 0;
-    }
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    
+    div {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.5em;
+      margin-top: 0;
 
-    p {
-      margin-top: .5em;
+      h3, p {
+        margin: 0;
+      }
+
+      h3 {
+        margin-top: .5em;
+        margin-bottom: .5em;   
+      }
+
     }
   }
 }

@@ -15,10 +15,37 @@
     padding: 0;
 
     li {
+      color: rgba(255, 255, 255, .8);
+      cursor: pointer;
+      font-size: 3em;
+      position: relative;
+      transition: all 300ms ease-out;
+
       width: 50%;
-      &:last-child {
-        text-align: right;
+      -webkit-tap-highlight-color: transparent;
+
+      .arrow {
+        left: 1em;
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        transform: translate(-0%, -50%);
+        transition: all 300ms ease-out;
+        &--active {
+          animation: blinking 1s infinite alternate;
+        }
+      }
+
+      &:last-child .arrow {
+        left: initial;
+        right: 1em;
       }
     }
   }
+}
+
+@keyframes blinking {
+  0%{opacity: 0}
+  100% {opacity: 1}
 }

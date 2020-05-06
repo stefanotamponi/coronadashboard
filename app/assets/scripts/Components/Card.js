@@ -29,8 +29,6 @@ class Card {
           <h3 title="${data["deaths"]}">${kFormat(data["deaths"])}</h3>
           <p>Decessi</p>
         </div>
-      </div>
-      <div class="card__section">
         <div>
           <h3 title="${data["critical"]}">${kFormat(data["critical"])}</h3>
           <p>Critici</p>

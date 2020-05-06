@@ -5,6 +5,9 @@
   position: relative;
   transition: all 300ms ease-out;
   z-index: -1;
+  @mixin atTall {
+    height: 65vh;
+  }
 
   &__title {
     color: #FFF;
@@ -18,11 +21,21 @@
     transform: translate(-50%, -50%);
     transition: all 300ms ease-out;
     text-transform: uppercase;
+    @mixin atShort {
+      font-size: 1.5em;
+    }
   }
 
   i {
     font-size: 10em;
     color: #FFF;
+    transition: all 300ms ease-out;
+    @mixin atShort {
+      font-size: 5em;
+    }
+    @mixin atTall {
+      font-size: 17em;
+    }
   }
 
   &__inner {

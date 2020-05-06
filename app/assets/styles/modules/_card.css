@@ -6,20 +6,32 @@
   transition: all 300ms ease-out;
   text-align: center;
   z-index: 2;
+  @mixin atShort {
+    padding: .5em 0;
+    font-size: .8em;
+    margin-top: -3em;
+
+  }
 
   h1 {
     margin-bottom: 1em;
+    @mixin atShort {
+      margin-bottom: .5em;
+    }
   }
 
   &__section {
     align-items: center;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     
     div {
       display: flex;
       flex-direction: column;
       margin-bottom: 2em;
+      flex-basis: 7.5em;
+
       margin-top: 0;
 
       h3, p {

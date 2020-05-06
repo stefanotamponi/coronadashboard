@@ -1,6 +1,9 @@
 .container {
   max-width: calc(100% - 2em);
   margin: 0 auto;
+  @mixin atLarge {
+    max-width: 1000px;
+  }
 }
 
 .wrapper {

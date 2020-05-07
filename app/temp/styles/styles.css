@@ -442,9 +442,12 @@ a {
     flex-wrap: wrap;
   }
 
+@media screen and (min-width: 1000px) {
+
 .card__section--main {
-      margin-bottom: 3em;
+        margin-bottom: 3em
     }
+  }
 
 .card__section div {
       display: flex;

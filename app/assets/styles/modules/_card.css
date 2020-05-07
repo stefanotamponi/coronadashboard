@@ -43,7 +43,9 @@
     flex-wrap: wrap;
 
     &--main {
-      margin-bottom: 3em;
+      @mixin atLarge {
+        margin-bottom: 3em;
+      }
     }
     
     div {

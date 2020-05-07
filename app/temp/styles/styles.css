@@ -404,6 +404,16 @@ a {
 }
   }
 
+@media screen and (min-width: 1000px) {
+
+.card {
+    background-color: transparent;
+    color: #FFF;
+    margin-top: 0
+
+}
+  }
+
 .card h1 {
     margin-bottom: 1em;
   }
@@ -432,12 +442,15 @@ a {
     flex-wrap: wrap;
   }
 
+.card__section--main {
+      margin-bottom: 3em;
+    }
+
 .card__section div {
       display: flex;
       flex-direction: column;
       margin-bottom: 2em;
       flex-basis: 7.5em;
-
       margin-top: 0;
 
     }
@@ -459,6 +472,7 @@ a {
 
 .slideshow {
   background: rgba(0, 0, 0, .5);
+  background: transparent;
   height: 50vh;
   overflow: hidden;
   position: relative;
@@ -470,6 +484,14 @@ a {
 
 .slideshow {
     height: 65vh
+}
+  }
+
+@media screen and (min-width: 1000px) {
+
+.slideshow {
+    background-color: rgba(255, 255, 255, .02);
+    height: 55vh
 }
   }
 

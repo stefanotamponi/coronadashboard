@@ -10,7 +10,12 @@
     padding: .5em 0;
     font-size: .8em;
     margin-top: -3em;
+  }
 
+  @mixin atLarge {
+    background-color: transparent;
+    color: #FFF;
+    margin-top: 0;
   }
 
   h1 {
@@ -36,13 +41,16 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+
+    &--main {
+      margin-bottom: 3em;
+    }
     
     div {
       display: flex;
       flex-direction: column;
       margin-bottom: 2em;
       flex-basis: 7.5em;
-
       margin-top: 0;
 
       h3, p {

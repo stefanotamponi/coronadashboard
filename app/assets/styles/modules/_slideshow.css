@@ -1,5 +1,6 @@
 .slideshow {
   background: rgba(0, 0, 0, .5);
+  background: transparent;
   height: 50vh;
   overflow: hidden;
   position: relative;
@@ -7,6 +8,10 @@
   z-index: -1;
   @mixin atTall {
     height: 65vh;
+  }
+  @mixin atLarge {
+    background-color: rgba(255, 255, 255, .02);
+    height: 55vh;
   }
 
   &__title {

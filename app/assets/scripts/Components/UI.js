@@ -14,10 +14,12 @@ class UI {
   setup() {
     this.navigation.setAttribute("class", "navigation")
     this.navigation.innerHTML=`
-      <ul>
-        <li class="main-navigation" id="global"><i class="arrow fas fa-angle-left"></i></li>
-        <li class="main-navigation" id="local"><i class="arrow fas fa-angle-right"></i></li>
-      </ul>
+      <div class="container">
+        <ul>
+          <li class="main-navigation" id="global"><i class="arrow fas fa-angle-left"></i></li>
+          <li class="main-navigation" id="local"><i class="arrow fas fa-angle-right"></i></li>
+        </ul>
+      </div>
     `
     this.app.appendChild(this.card.main);
     this.app.appendChild(this.navigation);

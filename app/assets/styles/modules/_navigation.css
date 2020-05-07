@@ -1,11 +1,16 @@
 .navigation {
+  height: 50%;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
+  transition: all 300ms ease-out;
   width: 100%;
-  height: 50%;
   @mixin atTall {
     height: 65%;
+  }
+
+  .container {
+    height: 100%;
   }
 
   ul {
@@ -28,7 +33,7 @@
       -webkit-tap-highlight-color: transparent;
 
       .arrow {
-        left: 1em;
+        left: 0;
         opacity: 0;
         pointer-events: none;
         position: absolute;
@@ -42,7 +47,7 @@
 
       &:last-child .arrow {
         left: initial;
-        right: 1em;
+        right: 0;
       }
     }
   }

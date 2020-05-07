@@ -34,6 +34,9 @@
     color: #555;
     display: block;
     margin-bottom: 2em;
+    @mixin atLarge {
+      color: #f6f6f6;
+    }
   }
 
   &__section {
@@ -72,5 +75,4 @@
 
     }
   }
-
 }

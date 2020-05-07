@@ -8,6 +8,9 @@
   @mixin atTall {
     height: 65%;
   }
+  @mixin atLarge {
+    height: 50%;
+  }
 
   .container {
     height: 100%;

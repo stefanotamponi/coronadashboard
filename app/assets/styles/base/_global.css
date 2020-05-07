@@ -4,8 +4,11 @@ html, body {
 }
 
 body {
-  background-color: #333;
+  background-image: radial-gradient(circle at top, #333, #222);
   font-family: 'Lato', sans-serif;
+  @mixin atLarge {
+    background: #333
+  }
 }
 
 a {

@@ -39,6 +39,7 @@ class Card {
         </div>
       </div>
       <h2>Dati giornalieri</h2>
+      ${mode == "Italia" ? "<small class='card__detail'>*Dati disponibili dalle 18</small>" : ""}
       <div class="card__section card__section--alt">
         <div>
           <h3 title="${data["todayCases"]}">${kFormat(data["todayCases"])}</h3>
@@ -55,7 +56,7 @@ class Card {
     this.content.innerHTML = `
       <h1>Totale</h1>
       ${content}
-      <p>Dati forniti da <a href="https://github.com/novelCOVID/API">NovelCovid</a></p>
+      <p>Tutti i dati sono forniti da <a href="https://github.com/novelCOVID/API">NovelCovid</a></p>
     `;
   }
 }

@@ -20,6 +20,17 @@
     }
   }
 
+  
+  h2 {
+    margin: .5em;
+  }
+
+  &__detail {
+    color: #555;
+    display: block;
+    margin-bottom: 2em;
+  }
+
   &__section {
     align-items: center;
     display: flex;
@@ -52,5 +63,4 @@
     }
   }
 
-  
 }

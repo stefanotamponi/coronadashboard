@@ -21,10 +21,8 @@ export const requestData = async function(mode) {
 
 
 export const kFormat = n => {
-  if (Math.abs(n) > 999) {
-    return Math.sign(n)*((Math.abs(n)/1000).toFixed(1)) + 'k'
-  } else {
-    return Math.sign(n)*Math.abs(n)
-  }
-
+  if (n < 1e3) return n;
+  if (n >= 1e3 && n < 1e6) return +(n / 1e3).toFixed(1) + "k";
+  if (n >= 1e6 && n < 1e9) return +(n / 1e6).toFixed(1) + "mln";
+  if (n >= 1e9) return +(n / 1e9).toFixed(1) + "mlrd";
 }

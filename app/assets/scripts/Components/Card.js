@@ -39,7 +39,7 @@ class Card {
         </div>
       </div>
       <h2>Dati giornalieri</h2>
-      ${mode == "Italia" ? "<small class='card__detail'>*Dati disponibili dalle 18</small>" : ""}
+      ${mode == "Italia" ? "<small class='card__detail'>*Dati disponibili dopo le 18</small>" : ""}
       <div class="card__section card__section--alt">
         <div>
           <h3 title="${data["todayCases"]}">${kFormat(data["todayCases"])}</h3>

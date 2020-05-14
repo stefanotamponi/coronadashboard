@@ -11,7 +11,6 @@ export const requestData = async function(mode) {
 
   try {
     let response = await fetch(baseUrl + endpoint);
-    console.log(`[requestData]: response status for ${endpoint}: ${response.status}`);
     return await response.json();
   } catch(err) {
     return {error: err}; //since we were expecting an object...

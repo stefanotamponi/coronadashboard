@@ -53,6 +53,11 @@
       }
     }
     
+    &--alt {
+      max-width: 48em;
+      margin: 0 auto;
+    }
+
     div {
       display: flex;
       flex-direction: column;

@@ -23,10 +23,12 @@
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 15%;
-    transform: translate(-50%, -50%);
-    transition: all 300ms ease-out;
     text-transform: uppercase;
+    top: 15%;
+    text-align: center;
+    transform: translate(-48%, -50%);
+    transition: all 300ms ease-out;
+
     @mixin atShort {
       font-size: 1.5em;
     }
@@ -41,6 +43,9 @@
     }
     @mixin atTall {
       font-size: 17em;
+    }
+    @mixin atTall {
+      padding-top: .21em;
     }
   }
 

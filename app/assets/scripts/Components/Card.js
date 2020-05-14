@@ -51,8 +51,6 @@ class Card {
         </div>
       </div>
     `
-    console.log(data)
-
     this.content.innerHTML = `
       <h1>Totale</h1>
       ${content}

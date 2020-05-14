@@ -5,6 +5,7 @@
   top: 0;
   transition: all 300ms ease-out;
   width: 100%;
+  
   @mixin atTall {
     height: 65%;
   }

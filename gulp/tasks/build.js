@@ -6,7 +6,7 @@ cssnano = require('gulp-cssnano'),
 uglify = require('gulp-uglify'),
 browserSync = require('browser-sync').create();
 
-gulp.task('previewDist',function() {
+gulp.task('previewDist', () => {
   browserSync.init({
     notify: false,
     server: {
@@ -17,7 +17,7 @@ gulp.task('previewDist',function() {
 
 gulp.task('deleteDistFolder', () => del("./docs"));
 
-gulp.task('copyGeneralFiles', gulp.series('deleteDistFolder', function() {
+gulp.task('copyGeneralFiles', gulp.series('deleteDistFolder', () => {
   var pathsToCopy = [
     './app/**/*',
     '!./app/index.html',
@@ -31,11 +31,11 @@ gulp.task('copyGeneralFiles', gulp.series('deleteDistFolder', function() {
     .pipe(gulp.dest("./docs"));
 }));
 
-gulp.task('usemin', function() {
+gulp.task('usemin', () => {
   return gulp.src("./app/index.html")
     .pipe(usemin({
-      css: [function() {return rev()}, function() {return cssnano()}],
-      js: [function() {return rev()}, function() {return uglify()}]
+      css: [() => rev(), () => cssnano()],
+      js: [() => rev(), () => uglify()]
     }))
     .pipe(gulp.dest("./docs"));
 });

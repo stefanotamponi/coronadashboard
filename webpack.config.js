@@ -4,6 +4,7 @@ module.exports = {
   entry: {
     App: "./app/assets/scripts/App.js"
   },
+  mode: 'production',
   output: {
     path: path.resolve(__dirname, "./app/temp/scripts"),
     filename: "[name].js"

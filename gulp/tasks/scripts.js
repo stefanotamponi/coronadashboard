@@ -1,13 +1,10 @@
-var gulp = require('gulp'),
+const gulp = require('gulp'),
 webpack = require('webpack');
 
-gulp.task('scripts', gulp.series('modernizr', function(callback) {
+gulp.task('scripts', (callback) => {
   webpack(require('../../webpack.config.js'), function(err, stats) {
-    if (err) {
-      console.log(err.toString());
-    }
-
+    if (err) console.log(err.toString());
     console.log(stats.toString());
     callback();
   });
-})); 
+}); 

@@ -29,8 +29,8 @@ class Router {
 
   loadInitialRoute() {
     const pathNamesplit = window.location.pathname.split('/'),
-    pathParts = pathNamesplit.length > 1 ? pathNamesplit.slice(1) : '';
-
+    pathParts = pathNamesplit.length > 2 ? pathNamesplit.slice(2) : '';
+    //added +1 (length, slice) in order to handle subfolder on ghpages (baseUrl = stefanotamponi.github.io/coronadashboard/#)
     this.loadRoute(...pathParts);
   }
 }
